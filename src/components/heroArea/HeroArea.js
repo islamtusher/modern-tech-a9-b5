@@ -4,13 +4,13 @@ import { Carousel } from 'react-bootstrap';
 
 const HeroArea = () => {
     return (
-        <div className='d-flex align-items-center my-5'>
+        <div className='hero-area d-flex align-items-center '>
             <div className="banner-title w-50">
-                <h1>PICK-UP YOUR MORDERN DREAM TECHNOLOGY</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate atque consectetur pariatur neque adipisci nemo id unde necessitatibus debitis quam?
+                <h1 className='title'>PICK-UP YOUR MORDERN DREAM TECHNOLOGY</h1>
+                <p className=''>
+                A racecar-style gaming chair that provides luxury and comfort, whether it's used for intense gaming sessions and climbing to the top of the leaderboards, or long work days. When perusing for the best gaming chair, you should always make sure that it will take care of your Body
                 </p>
-                <button className='py-2 px-3' type="submit">Pick Up</button>
+                <button className='bannen-btn' type="submit">Pick Up</button>
             </div>
             <div className="banner-slides w-50">
                 <div className='carousel'>
@@ -18,7 +18,8 @@ const HeroArea = () => {
                     <Carousel.Item interval={1000} >
                         <img
                         className="banner-img d-block w-100 h-100 img-fluid"
-                        src="images/c1.jpg"
+                        src="images/c1.png"
+                        // src="images/c1.jpg"
                         alt="First slide"
                         />
                         <Carousel.Caption>
@@ -28,7 +29,8 @@ const HeroArea = () => {
                     <Carousel.Item interval={500}>
                         <img
                         className="banner-img d-block w-100 h-100 img-fluid"
-                        src="images/c2.jpg"
+                        src="images/c2.png"
+                        // src="images/c2.jpg"
                         alt="Second slide"
                             />
                             <Carousel.Caption>
@@ -38,7 +40,8 @@ const HeroArea = () => {
                     <Carousel.Item>
                         <img
                         className="banner-img d-block w-100 h-100 img-fluid"
-                        src="images/c3.jpg"
+                        src="images/c3.png"
+                        // src="images/c3.jpg"
                         alt="Third slide"
                         />
                         <Carousel.Caption>

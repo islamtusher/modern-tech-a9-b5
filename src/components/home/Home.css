@@ -1,0 +1,18 @@
+.home{
+    background-color: #eaeafd ;
+}
+.reviews-btn{
+    display: flex;
+    justify-content: center;
+}
+.reviews-btn .link{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 25px;
+    margin: 0;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 139, 81);
+    background-color: rgb(1, 30, 50);
+
+}
