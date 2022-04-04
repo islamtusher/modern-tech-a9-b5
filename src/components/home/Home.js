@@ -5,6 +5,8 @@ import HeroArea from '../heroArea/HeroArea';
 import Review from '../reviews/review/Review';
 import useReviews from '../../customHooks/useReviews';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews()
@@ -19,7 +21,10 @@ const Home = () => {
                 }
                 </Row>
                 <div className="reviews-btn">
-                    <Link className='link' to={'/reviews'}>Shome All</Link>                   
+                    <Link className='link' to={'/reviews'}>
+                        Shomw All <FontAwesomeIcon className='ms-3' icon={faPaperPlane} />
+                    </Link>                   
+                    
                 </div>
            </Container>
         </div>

@@ -6,13 +6,19 @@
     justify-content: center;
 }
 .reviews-btn .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 6px 25px;
+    padding: 8px 23px;
     margin: 0;
     font-size: 25px;
     text-decoration: none;
-    color: rgb(255, 139, 81);
+    color: white;
     background-color: rgb(1, 30, 50);
-
+}
+.reviews-btn .link:hover{
+    color: rgb(238, 137, 37);
+    background-color: rgb(2, 45, 74);
 }
