@@ -10,7 +10,7 @@ const Header = () => {
             <Navbar className='nav-contain' expand="lg">
                 <Container className='py-3'>
                     <Link className='brand' to={'/'}>Mordern Tech</Link>
-                    <Navbar.Toggle className='toggle-btn' aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle className='bg-light ' aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav ">
                         <Nav className="ms-auto">
                             <CustomLink to={'/'}> Home</CustomLink>
