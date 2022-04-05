@@ -5,8 +5,8 @@ import { Col } from 'react-bootstrap';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Review = ({ review }) => {
-    const {name, comment, picture, rating} = review
-    console.log(name)
+    const { name, comment, picture, rating } = review
+    
     return (
         <Col className='review-col' sm={12} lg={4}>
             <div className='review-cart '>

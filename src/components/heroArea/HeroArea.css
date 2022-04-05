@@ -1,6 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rouge+Script&display=swap'); */
+/* google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&family=Rouge+Script&display=swap');
-
 
 .banner-title .title{
     color: rgb(0, 43, 97);
@@ -24,7 +23,6 @@
 .bannen-btn:hover{
     background-color: rgb(1, 30, 50);
     color: rgb(255, 139, 81);
-
 }
 
 .carousel{

@@ -1,7 +1,5 @@
-import React, { PureComponent, useEffect, useState } from 'react';
-import './DashBoard.css';
-import {  ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, BarChart, Bar, AreaChart, Area, PieChart, Pie, ComposedChart, RadialBarChart, RadialBar } from 'recharts';
-import { Tooltip } from 'bootstrap';
+import React, { useEffect, useState } from 'react';
+import {  ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, BarChart, Bar,  Area, ComposedChart, Tooltip } from 'recharts';
 import { Col, Container, Row } from 'react-bootstrap';
 const DashBoard = () => {
   const [info, setInfo] = useState([])
@@ -15,7 +13,8 @@ const DashBoard = () => {
     return (
           <div className='my-5'>
             <Container>
-              <Row className='gy-5'>
+          <Row className='gy-5'>
+            {/* link chart */}
                   <Col  className='d-flex justify-content-center' sm={12} lg={6}>
                       <ResponsiveContainer width="90%" height={400}>
                         <LineChart  data={info}>   
@@ -24,15 +23,18 @@ const DashBoard = () => {
                           <Line type="monotone" dataKey={"sell"} stroke="#ccc" strokeWidth={2} />
                           <CartesianGrid stroke="#ccc" />  
                           <XAxis dataKey="month" />
+                          <Tooltip></Tooltip>
                           <YAxis />
                           <Legend />
                         </LineChart>
                       </ResponsiveContainer>
-                  </Col >
+                    </Col >
+            {/* bar chart */}
                   <Col className='d-flex justify-content-center' sm={12} lg={6}>
                     <ResponsiveContainer width="90%" height={400}>  
                       <BarChart data={info}>
-                        <XAxis dataKey="sell" />
+                      <XAxis dataKey="sell" />
+                      <Tooltip></Tooltip>
                         <YAxis />
                         <Legend />
                         <Bar dataKey="revenue" fill="#8884d8" />
@@ -40,10 +42,12 @@ const DashBoard = () => {
                       </BarChart>
                     </ResponsiveContainer>
                   </Col>
+            {/* composed chart */}
                   <Col className='d-flex justify-content-center' sm={12} lg={6}>
                     <ResponsiveContainer width="90%" height={400}>  
                       <ComposedChart data={info}>
                         <XAxis dataKey="month" />
+                        <Tooltip></Tooltip>                
                         <YAxis />
                         <Legend />
                         <CartesianGrid stroke="#f5f5f5" />

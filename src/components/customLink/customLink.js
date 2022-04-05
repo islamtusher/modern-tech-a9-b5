@@ -1,6 +1,6 @@
+// custom link for active link
 import './customLink.css'
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-
 
 function CustomLink({ children, to }) {
     let resolved = useResolvedPath(to);
@@ -10,7 +10,6 @@ function CustomLink({ children, to }) {
       <div>
         <Link
           className={ `link ${match ? "activeLink" : ""}`}
-          // style={{ color : match ? "red" : "black"}}
           to={to}
         >
           {children}

@@ -6,6 +6,7 @@ const Blogs = () => {
         <div>
             <Container>
                 <Row>
+                    {/* first qustion ans */}
                     <Col sm={12} lg={6}>
                         <div className="answer context-api">
                             <h3>React Context Api</h3>
@@ -14,6 +15,7 @@ const Blogs = () => {
                             </p>
                         </div>
                     </Col>
+                    {/* 2nd qustion ans */}
                     <Col sm={12} lg={6}>
                         <div className="answer Semantics Tag">
                             <h3>Semantics Tag</h3>

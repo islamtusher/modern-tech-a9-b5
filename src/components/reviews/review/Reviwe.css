@@ -1,9 +1,5 @@
-.review-col{
-    /* display: flex;
-    justify-content: center; */
-}
-.review-cart{
 
+.review-cart{
     background-color: rgb(246, 245, 245);
     border-radius: 5px;
     margin-bottom: 50px;
@@ -12,7 +8,6 @@
     width: 95%;
     height: 420px;
     border: 2px solid orange;
-    /* box-shadow: 15px 10px 35px rgb(206, 203, 203); */
 }
 .reviewer-img {
     position: relative;

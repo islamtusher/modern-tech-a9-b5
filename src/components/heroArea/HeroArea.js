@@ -6,15 +6,17 @@ const HeroArea = () => {
     return (
         <div className='hero-area'>
             <Row>
+                {/* banner laft */}
                 <Col sm={12} lg={8} className="d-flex  align-items-center">
                     <div className="banner-title  ">
-                        <h1 className='title'>PICK-UP YOUR MORDERN DREAM TECHNOLOGY</h1>
+                        <h1 className='title'>PICK-UP YOUR MODERN DREAM TECHNOLOGY</h1>
                         <p className=''>
                         A racecar-style gaming chair that provides luxury and comfort, whether it's used for intense gaming sessions and climbing to the top of the leaderboards, or long work days. When perusing for the best gaming chair, you should always make sure that it will take care of your Body
                         </p>
                         <button className='bannen-btn' type="submit">Pick Up</button>
                     </div>
                 </Col>
+                {/* banner right */}
                 <Col sm={12} lg={4} className=" d-flex align-items-center justify-content-center">
                    <div className='carousel '>
                         <Carousel controls={false}>

@@ -15,6 +15,7 @@ const Home = () => {
         <div className='home'>
             <Container>
                 <HeroArea></HeroArea>
+                {/* reciew section */}
                 <div>
                     <h1 className='reviews-title'>Users Review</h1>
                     <Row>
