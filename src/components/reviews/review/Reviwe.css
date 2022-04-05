@@ -6,9 +6,9 @@
 
     background-color: rgb(246, 245, 245);
     border-radius: 5px;
+    margin-bottom: 50px;
     text-align: center;
     padding: 15px;
-    margin-bottom: 120px;
     width: 95%;
     height: 420px;
     border: 2px solid orange;
@@ -19,4 +19,11 @@
     top: -50px;
     width: 90px;
     border-radius: 100%;
+}
+@media screen and (max-width: 992px){
+    .review-cart{
+        margin-bottom: 120px;
+
+    }
+    
 }

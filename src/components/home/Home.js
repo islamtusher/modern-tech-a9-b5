@@ -16,7 +16,7 @@ const Home = () => {
             <Container>
                 <HeroArea></HeroArea>
                 <div>
-                    <h1 className='reviews-title'>User Reviews</h1>
+                    <h1 className='reviews-title'>Users Review</h1>
                     <Row>
                     {
                         reviews.slice(0,3).map(review => <Review key={review._id} review={review}></Review>)
