@@ -3,36 +3,42 @@
       "_id": "624b2322f8a750ebfc212f23",
       "picture": "./images/reviewer/per1.jpg",
       "name": "Chris McGuinn",
-      "comment": "After using this chair extensively for upright gaming/work and full reclined movie viewing I can still stand by the 5-star rating I gave it. The chair always feels solid in any position (200lb+ guy) and the footrest doesn't feel flimsy at all if treated properly"
+      "comment": "After using this chair extensively for upright gaming/work and full reclined movie viewing I can still stand by the 5-star rating I gave it. The chair always feels solid in any position (200lb+ guy) and the footrest doesn't feel flimsy at all if treated properly",
+      "rating" : 3.5
     },
     {
       "_id": "624b232202d8a849a2a6349e",
       "picture": "./images/reviewer/per2.jpg",
       "name": "Phillip L. Williams",
-      "comment": "I have never had a cool office chair and decided to give one a try. I ordered this expecting to get a comfy chair that was solid and supportive. I was able to assemble the chair easily and though this was going to be a great new addition to my corner of the world."
+      "comment": "I have never had a cool office chair and decided to give one a try. I ordered this expecting to get a comfy chair that was solid and supportive. I was able to assemble the chair easily and though this was going to be a great new addition to my corner of the world.",
+      "rating" : 4
     },
     {
       "_id": "624b23222748e62a3ee37a2a",
       "picture": "./images/reviewer/per3.jpg",
       "name": "Rowit Powul",
-      "comment": "Great Chair! Can't beat this chair for the price. Easy to put together very comfortable. Foot rest is a little cheap and mine came with a missing strap for the lumbar support. Respawn is sending me a new one and the customer service was quick to respond and took care of the issue."
+      "comment": "Great Chair! Easy to put together very comfortable. Foot rest is a little cheap and mine came with a missing strap for the lumbar support. Respawn is sending me a new one and the customer service was quick to respond and took care of the issue.",
+      "rating" : 3
     },
     {
       "_id": "624b2322c69efac672cc2f41",
       "picture": "./images/reviewer/per4.jpg",
       "name": "Picky Consumer",
-      "comment": "The assembly of this chair is not the greatest. Instructions are unclear. The QA person of the chair did not make sure all the holes aligned from the base to the stand. Additionally, the back is not aligned because the holes attaching the base and your back support is off."
+      "comment": "The assembly of this chair is not the greatest. Instructions are unclear. The QA person of the chair did not make sure all the holes aligned from the base to the stand. the back is not aligned because the holes attaching the base and your back support is off.",
+      "rating" : 2.5
     },
     {
       "_id": "624b2322cd637d938c27662b",
       "picture": "./images/reviewer/per5.jpg",
       "name": "Jackson",
-      "comment": "Chair is super easy to assemble, probably one of the easiest I've put together. Took me less than 10 minutes which is awesome. Most chairs I've purchased in the past become a fight and can take 20 minutes or more of fighting them."
+      "comment": "Chair is super easy to assemble, probably one of the easiest I've put together. Took me less than 10 minutes which is awesome. Most chairs I've purchased in the past become a fight and can take 20 minutes or more of fighting them.",
+      "rating" : 5
     },
     {
       "_id": "624b23227b542422381a8d98",
       "picture": "./images/reviewer/per6.jpg",
       "name": "Pitter Gill",
-      "comment": "Quick and easy assembly. I was slightly hesitant to purchase after I saw all the reviews claiming the armrests came loose after a bit, but I figured I’d give it a go. I noticed the pitiful amount of threadlocker on the armrest bolts from the factory but figured for the sake of an honest review I’d leave them as-is at first."
+      "comment": "I was slightly hesitant to purchase after I saw all the reviews claiming the armrests came loose after a bit, but I figured I’d give it a go. I noticed the pitiful amount of threadlocker on the armrest bolts from the factory",
+      "rating" : 2
     }
   ]

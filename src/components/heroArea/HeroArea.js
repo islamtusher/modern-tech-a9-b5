@@ -19,7 +19,6 @@ const HeroArea = () => {
                         <img
                         className="banner-img d-block w-100 h-100 img-fluid"
                         src="images/c1.png"
-                        // src="images/c1.jpg"
                         alt="First slide"
                         />
                         <Carousel.Caption>
@@ -30,7 +29,6 @@ const HeroArea = () => {
                         <img
                         className="banner-img d-block w-100 h-100 img-fluid"
                         src="images/c2.png"
-                        // src="images/c2.jpg"
                         alt="Second slide"
                             />
                             <Carousel.Caption>
@@ -41,7 +39,6 @@ const HeroArea = () => {
                         <img
                         className="banner-img d-block w-100 h-100 img-fluid"
                         src="images/c3.png"
-                        // src="images/c3.jpg"
                         alt="Third slide"
                         />
                         <Carousel.Caption>

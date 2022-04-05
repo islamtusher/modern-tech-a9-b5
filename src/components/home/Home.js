@@ -6,7 +6,7 @@ import Review from '../reviews/review/Review';
 import useReviews from '../../customHooks/useReviews';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews()
