@@ -5,7 +5,7 @@ const useReviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('fakeData.json')
+        fetch('./fakeData/reviewsData.json')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

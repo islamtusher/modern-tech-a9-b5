@@ -1,65 +1,60 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, useEffect, useState } from 'react';
 import './DashBoard.css';
-import {  ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid } from 'recharts';
+import {  ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, BarChart, Bar, AreaChart, Area, PieChart, Pie, ComposedChart, RadialBarChart, RadialBar } from 'recharts';
+import { Tooltip } from 'bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 const DashBoard = () => {
-    const data = [
-        {
-          name: 'Page A',
-          uv: 4000,
-          pv: 2400,
-          amt: 2400,
-        },
-        {
-          name: 'Page B',
-          uv: 3000,
-          pv: 1398,
-          amt: 2210,
-        },
-        {
-          name: 'Page C',
-          uv: 2000,
-          pv: 9800,
-          amt: 2290,
-        },
-        {
-          name: 'Page D',
-          uv: 2780,
-          pv: 3908,
-          amt: 2000,
-        },
-        {
-          name: 'Page E',
-          uv: 1890,
-          pv: 4800,
-          amt: 2181,
-        },
-        {
-          name: 'Page F',
-          uv: 2390,
-          pv: 3800,
-          amt: 2500,
-        },
-        {
-          name: 'Page G',
-          uv: 3490,
-          pv: 4300,
-          amt: 2100,
-        },
-        {
-          name: 'Page H',
-          uv: 4200,
-          pv: 4300,
-          amt: 2100,
-        }
-      ];
+  const [info, setInfo] = useState([])
+  useEffect(() => {
+    fetch('./fakeData/chartsData.json')
+      .then(res => res.json())
+      .then(data => setInfo(data))
+    console.log(info);
+  },[])
+    
     return (
-          <div>
-            <LineChart width={600} height={300} data={data}>   
-            <Line type="monotone" dataKey="uv" stroke="#8884d8" strokeWidth={2} />
-            <CartesianGrid stroke="#ccc" />  
-            <XAxis dataKey="name" />
-            <YAxis />
-            </LineChart>  
+          <div className='dash-board '>
+              <Container>
+                    <Row className=''>
+                        <Col  className='d-flex justify-content-center' sm={12} lg={6}>
+                            <ResponsiveContainer width="85%" height={400}>
+                              <LineChart  data={info}>   
+                                <Line type="monotone" dataKey="investment" stroke="#8884d8" strokeWidth={2} />
+                                <Line type="monotone" dataKey="revenue" stroke="#82ca9d" strokeWidth={2} />
+                                <Line type="monotone" dataKey={"sell"} stroke="#ccc" strokeWidth={2} />
+                                <CartesianGrid stroke="#ccc" />  
+                                <XAxis dataKey="month" />
+                                <YAxis />
+                                <Legend />
+                              </LineChart>
+                            </ResponsiveContainer>
+                        </Col >
+                        <Col className='d-flex justify-content-center' sm={12} lg={6}>
+                          <ResponsiveContainer width="85%" height={400}>  
+                            <BarChart data={info}>
+                              <XAxis dataKey="sell" />
+                              <YAxis />
+                              <Legend />
+                              <Bar dataKey="revenue" fill="#8884d8" />
+                              <Bar dataKey="investment" fill="#82ca9d" />
+                            </BarChart>
+                          </ResponsiveContainer>
+                        </Col>
+                        <Col className='d-flex justify-content-center' sm={12} lg={6}>
+                          <ResponsiveContainer width="85%" height={400}>  
+                            <ComposedChart data={info}>
+                              <XAxis dataKey="month" />
+                              <YAxis />
+                              <Legend />
+                              <CartesianGrid stroke="#f5f5f5" />
+                              <Area type="monotone" dataKey="investment" fill="#8884d8" stroke="#8884d8" />
+                              <Area type="monotone" dataKey="revenue" fill="#82ca9d" stroke="#82ca9d" />
+                              <Bar dataKey="revenue" barSize={20} fill="#413ea0" />
+                            </ComposedChart> 
+                            </ResponsiveContainer>
+                        </Col>
+                    </Row>
+              </Container>
           </div>
     );
 };
