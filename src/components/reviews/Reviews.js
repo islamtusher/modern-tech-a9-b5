@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+
+import { Row } from 'react-bootstrap';
 import useReviews from '../../customHooks/useReviews';
 import Review from './review/Review';
 import './Reviews.css'

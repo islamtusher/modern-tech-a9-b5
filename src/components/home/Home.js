@@ -15,14 +15,17 @@ const Home = () => {
         <div className='home'>
             <Container>
                 <HeroArea></HeroArea>
-                <Row>
-                {
-                     reviews.slice(0,3).map(review => <Review key={review._id} review={review}></Review>)
-                }
-                </Row>
+                <div>
+                    <h1 className='reviews-title'>User Reviews</h1>
+                    <Row>
+                    {
+                        reviews.slice(0,3).map(review => <Review key={review._id} review={review}></Review>)
+                    }
+                    </Row>
+                </div>
                 <div className="reviews-btn">
                     <Link className='link' to={'/reviews'}>
-                        Shomw All <FontAwesomeIcon className='ms-3' icon={faPaperPlane} />
+                        Show All <FontAwesomeIcon className='ms-3' icon={faPaperPlane} />
                     </Link>                   
                     
                 </div>

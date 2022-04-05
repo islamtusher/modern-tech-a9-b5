@@ -1,8 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rouge+Script&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&family=Rouge+Script&display=swap');
 
-.hero-area{
-    height: 85vh;
+
+.banner-title .title{
+    color: rgb(0, 43, 97);
+    font-weight: bolder;
+    font-size: 46px;
+    font-family: 'Audiowide', cursive;
 }
 .hero-area p{
     font-family: 'Poppins', sans-serif;
@@ -10,11 +14,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.banner-title .title{
-    font-weight: bold;
-    font-size: 44px;
-    font-family: 'Audiowide', cursive;
-}
+
 .bannen-btn{
     font-size: 23px;
     padding: 6px 17px;
@@ -27,10 +27,18 @@
 
 }
 .banner-img{
-    /* height: 200xp; */
+
 }
 .carousel{
-    /* height: 200px; */
-    width: 520px;
-    margin-left: auto;
+    height: 600px;
+}
+@media screen and (min-width: 996px){
+    .banner-title {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 400px){
+    .banner-title .title{
+        font-size: 50px;
+    }
 }

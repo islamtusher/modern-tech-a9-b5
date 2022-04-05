@@ -1,0 +1,12 @@
+.answer{
+    height: 310px;
+    text-align: center;
+    padding: 20px 15px;
+    border: 2px solid orange;
+    margin-top: 30px;
+}
+@media screen and (max-width: 425px){
+    .answer{
+        height: 380px;
+    }
+}
