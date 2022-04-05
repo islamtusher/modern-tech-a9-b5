@@ -7,7 +7,6 @@ const DashBoard = () => {
     fetch('./fakeData/chartsData.json')
       .then(res => res.json())
       .then(data => setInfo(data))
-    console.log(info);
   },[])
     
     return (
