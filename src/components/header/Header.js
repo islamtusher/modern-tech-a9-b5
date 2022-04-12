@@ -1,13 +1,14 @@
 import React from 'react';
+import './Header.css'
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../customHooks/useFirebase';
+import { signOut } from 'firebase/auth';
 import CustomLink from '../customLink/customLink';
-import './Header.css'
+import {useAuthState} from 'react-firebase-hooks/auth';
+import auth from '../../firebaseConfig'
 
 const Header = () => {
-    const { user, userSingOut } = useFirebase()
-    console.log(user)
+    const [user] = useAuthState(auth)
     return (
         <div>
             <Navbar className='nav-contain' expand="lg">
@@ -24,7 +25,7 @@ const Header = () => {
                             <CustomLink to={'/blogs'}> Blogs</CustomLink>
                             {
                                 user?.displayName ?
-                                    <Button onClick={userSingOut} variant="link"> LogOut </Button>
+                                    <Button onClick={() => signOut(auth)} variant="link"> LogOut </Button>
                                     :
                                     <CustomLink to={'/login'}> Login </CustomLink>        
                             }
