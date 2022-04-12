@@ -3,7 +3,8 @@
 }
 .brand{
     font-size: 30px;
-    color: rgb(255, 139, 81);
+    color: rgb(253, 253, 253);
+    /* color: rgb(255, 139, 81); */
     text-decoration: none;
     font-weight: bold;
 }
