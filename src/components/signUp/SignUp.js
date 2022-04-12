@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import useFirebase from '../../customHooks/useFirebase';
+import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
+import auth from '../../firebaseConfig'
 
 const SignUp = () => {
-    const {googleSignIn} = useFirebase() 
+    const [signInWithGoogle, user] = useSignInWithGoogle(auth)
     return (
         <div>
             <Form className='w-50 mx-auto mt-5'>
@@ -24,7 +25,7 @@ const SignUp = () => {
                     Sign Up
                 </Button>
             </Form>
-            <Button onClick={googleSignIn} variant="primary" type="submit">
+            <Button onClick={()=>signInWithGoogle()} variant="primary" type="submit">
                     Google SignIn
             </Button>
         </div>
