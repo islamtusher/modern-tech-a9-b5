@@ -1,0 +1,44 @@
+.user-form{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 35px 15px;
+    background-color: #13232f;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.user-form .submit-btn{
+    background-color: rgb(255, 119, 0);
+}
+.line{
+    width: 35%;
+    padding: 1px 0;
+}
+.input-fild input{
+    /* width: 320px; */
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  outline: none;
+  background-color: #13232f;
+  color: rgb(255, 142, 43);
+  padding: 0;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    
+    outline: none;
+    background-color: #192d3c;
+    border-bottom: 2px solid #25ebc3;
+    color: #25ebc3;
+}
