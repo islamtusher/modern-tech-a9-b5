@@ -4,6 +4,8 @@ import './SignUp.css';
 import { Button, Form } from 'react-bootstrap';
 import {useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import auth from '../../firebaseConfig'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  } from '@fortawesome/free-solid-svg-icons'
 
 const SignUp = () => {
     const [signInWithGoogle, user] = useSignInWithGoogle(auth)
@@ -33,13 +35,13 @@ const SignUp = () => {
                     <Button className='submit-btn' type="submit"> Sign Up </Button>
                </div>
             </Form>
-            <div className='d-flex justify-content-evenly text-light'>
+            <div className='d-flex justify-content-evenly align-items-center text-light'>
                 <hr className='line' />
                 <p>Or</p>
                 <hr className=' line' />
             </div>
             <div className="text-center">
-                <Button onClick={()=>signInWithGoogle()} className='' variant="primary" type="submit">
+                <Button onClick={()=>signInWithGoogle()} className='w-100' variant="primary" type="submit">
                     Google SignIn
                 </Button>
             </div>
